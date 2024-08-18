@@ -1,3 +1,27 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* have box model measurements include padding and border widths in the overall container widths */
+}
+html {
+  font-size: 62.5%; /* this makes 1rem = 10px for easier rem use/conversion elsewhere in CSS */
+}
 body {
-  margin: 0;
+  margin: 0; /* remove browser's default body margin */
+  font-size: 1.6rem; /* comparable to 16px */
+  line-height: 1.5; /* more readable space between lines */
+  overflow-wrap: break-word; /* prevents very-long words from overflowing their container */
+}
+img,
+picture,
+video,
+svg {
+  display: block;
+  max-width: 100%; /* prevent images from overflowing their container */
+}
+button,
+input,
+select,
+textarea {
+  font: inherit; /* let form elements inherit the typography settings from their container */
 }
