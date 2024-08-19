@@ -8,6 +8,7 @@ html {
 }
 body {
   margin: 0; /* remove browser's default body margin */
+  font-family: sans-serif; /* switch default text from serif */
   font-size: 1.6rem; /* comparable to 16px */
   line-height: 1.5; /* more readable space between lines */
   overflow-wrap: break-word; /* prevents very-long words from overflowing their container */
@@ -24,4 +25,9 @@ input,
 select,
 textarea {
   font: inherit; /* let form elements inherit the typography settings from their container */
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
 }
