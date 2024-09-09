@@ -167,6 +167,12 @@ h3 {
   width: 50%;
   padding-right: 2.4rem;
 }
+.ingredients img {
+  display: block;
+  max-width: 100%;
+  margin: 1em 0;
+  border-radius: var(--radius);
+}
 .ingredients ul {
   padding-left: 0;
   list-style-type: disclosure-closed;
@@ -188,6 +194,9 @@ h3 {
 }
 .instructions li:not(:nth-last-of-type(1)) {
   margin-bottom: 1em;
+}
+.instructions h3 {
+  margin-top: 2.4rem;
 }
 
 /* VIDEO */
