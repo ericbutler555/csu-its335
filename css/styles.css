@@ -2,6 +2,7 @@
 
 /* set custom properties for use throughout the stylesheet */
 :root {
+  --dark-brown: hsl(0 50% 20%);
   --brown: hsl(0 100% 40%);
   --red: hsl(10 90% 70%);
   --yellow: hsl(50 100% 90%);
@@ -45,6 +46,9 @@ textarea {
   max-width: 900px;
   margin: 0 auto;
 }
+main {
+  overflow: auto; /* expand around the floated sections */
+}
 
 /* HEADER */
 
@@ -53,6 +57,7 @@ header {
   box-shadow: var(--shadow);
   position: sticky; /* keeps the header on-screen even when scrolling the page */
   top: 0;
+  z-index: 10; /* keep in front of the youtube video embed */
 }
 header .container {
   display: flex;
@@ -260,4 +265,15 @@ h3 {
 
 footer {
   clear: both;
+  margin-top: 4.8rem;
+  padding: 3.6rem 0;
+  background-color: var(--dark-brown);
+}
+footer p {
+  margin: 0;
+  font-size: 0.875em;
+  color: white;
+}
+footer a {
+  color: inherit;
 }
