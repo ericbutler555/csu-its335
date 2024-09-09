@@ -3,7 +3,7 @@
 /* set custom properties for use throughout the stylesheet */
 :root {
   --brown: hsl(0 100% 40%);
-  --red: hsl(0 80% 50%);
+  --red: hsl(10 90% 70%);
   --yellow: hsl(50 100% 90%);
   --green: hsl(70 70% 30%);
   --cursive: "Delicious Handrawn", cursive;
@@ -50,6 +50,8 @@ textarea {
 header {
   background-color: var(--yellow);
   box-shadow: var(--shadow);
+  position: sticky; /* keeps the header on-screen even when scrolling the page */
+  top: 0;
 }
 header .container {
   display: flex;
@@ -90,7 +92,7 @@ nav.menu a:focus {
 
 .intro {
   display: flex;
-  padding: 2.4rem 0;
+  padding-top: 2.4rem;
 }
 .intro .column1 {
   width: 55%;
@@ -137,4 +139,47 @@ nav.menu a:focus {
 }
 .specs dd {
   flex: 1;
+}
+
+/* INGREDIENTS */
+
+h2, h3 {
+  font-family: var(--cursive);
+  margin: 0;
+}
+h2 {
+  color: var(--red);
+  font-size: 3.6rem;
+  padding-top: 4.8rem;
+}
+h3 {
+  color: var(--green);
+  font-size: 2.4rem;
+}
+.ingredients {
+  float: left;
+  width: 50%;
+  padding-right: 2.4rem;
+}
+.ingredients ul {
+  padding-left: 0;
+  list-style-type: disclosure-closed;
+  list-style-position: inside;
+}
+.ingredients li {
+  border-bottom: 1px solid #eee;
+  padding: 0.8rem 0;
+}
+
+/* INSTRUCTIONS */
+
+.instructions {
+  float: left;
+  width: 50%;
+}
+.instructions ol {
+  padding-left: 1em;
+}
+.instructions li {
+  margin-bottom: 1em;
 }
