@@ -1,3 +1,10 @@
+/* set custom properties for use throughout the stylesheet */
+:root {
+  --brown: hsl(0 100% 40%);
+  --red: hsl(0 80% 50%);
+  --yellow: hsl(50 100% 90%);
+}
+
 *,
 *::before,
 *::after {
@@ -5,6 +12,7 @@
 }
 html {
   font-size: 62.5%; /* this makes 1rem = 10px for easier rem use/conversion elsewhere in CSS */
+  scroll-behavior: smooth; /* smoothly animates the nav-menu jumps to different sections of the page */
 }
 body {
   margin: 0; /* remove browser's default body margin */
@@ -30,4 +38,46 @@ textarea {
 .container {
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 2.4rem;
+}
+
+/* HEADER */
+
+header {
+  background-color: var(--yellow);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .brand {
+  display: flex;
+  align-items: center;
+  color: var(--brown);
+  font-weight: bold;
+}
+nav.menu ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+nav.menu li {
+  flex: 1 1 auto;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav.menu a {
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s;
+}
+nav.menu a:hover,
+nav.menu a:focus {
+  background-color: var(--brown);
+  color: white;
 }
