@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap'); /* import custom font */
 
+/* GLOBALS */
+
 /* set custom properties for use throughout the stylesheet */
 :root {
   --dark-brown: hsl(0 50% 20%);
@@ -11,7 +13,6 @@
   --shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   --radius: 1.2rem;
 }
-
 *,
 *::before,
 *::after {
@@ -41,6 +42,8 @@ select,
 textarea {
   font: inherit; /* let form elements inherit the typography settings from their container */
 }
+
+/* LAYOUT */
 
 .container {
   max-width: 900px;
@@ -172,6 +175,7 @@ h3 {
   max-width: 100%;
   margin: 1em 0;
   border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 .ingredients ul {
   padding-left: 0;
