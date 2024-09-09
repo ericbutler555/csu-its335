@@ -213,3 +213,51 @@ h3 {
   top: 0;
   left: 0;
 }
+
+/* NOTES */
+
+.notes {
+  float: left;
+  width: 50%;
+  padding-right: 2.4rem;
+}
+.notes ol {
+  padding-left: 1.25rem;
+  font-size: 0.75em;
+}
+.notes li {
+  margin-bottom: 0.5em;
+}
+.notes ol ul {
+  padding-left: 1em;
+}
+
+/* NUTRITION INFO */
+
+.nutrition {
+  float: left;
+  width: 50%;
+  font-size: 0.875em;
+}
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #eee;
+}
+.nutrition table th,
+.nutrition table td {
+  text-align: left;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #eee;
+}
+.nutrition td:nth-of-type(1) {
+  font-weight: bold;
+  text-align: right;
+}
+
+/* FOOTER */
+
+footer {
+  clear: both;
+}
